@@ -1,5 +1,5 @@
 # CallidusSampleApp
-> This is a sample managing books app for a fictius book store.
+> This is a sample managing books app for a fictitious book store.
 
 ## Table of contents
 * [General info](#general-info)
@@ -26,15 +26,15 @@ This app is made to demonstrate usage of ASP.NET and EF Core frameworks for buil
   * [Bootstrap](http://getbootstrap.com/) for layout and styling
 
 ## Setup
-Clone repository locally to `C:\CallidusSampleApp` folder, and open up solution file. 
+Clone repository locally to `C:\CallidusSampleApp` folder, and open up solution file. Restore nuget packages and rebuild solution.
 Check that solution is configured to run multiple (all) projects, and if so click on start.
 
-NOTE: For application to run on a local machine ensure that you have LocalDB running. Check connection string [here](../blob/master/BookStore.Api/appsettings.json), and adjust if neccessary.
+NOTE: For application to run on a local machine ensure that you have LocalDB running. Check connection string [here](../master/BookStore.Api/appsettings.json), and adjust if neccessary.
 
 Three separate apps should start:
- * [BookStore API](../blob/master/BookStore.Api), which is used for for supporting CRUD operations, interacting with clients and managing data.
- * [BookStore Identity Server](../blob/master/BookStore.Identity), with configured InMemory store for authentication.
- * [BookStore Administration](../blob/master/BookStore.Frontend), user interface for book administration
+ * [BookStore API](../master/BookStore.Api), which is used for for supporting CRUD operations, interacting with clients and managing data.
+ * [BookStore Identity Server](../master/BookStore.Identity), with configured InMemory store for authentication.
+ * [BookStore Administration](../master/BookStore.Frontend), user interface for book administration
 
 ## Features
 Following features are supported
