@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-md-3">
+    <app-book-form (resetClicked)="reset($event)" (bookCreated)="save($event)" [book]="book"></app-book-form>
+  </div>
+  <div class="col-md-9">
+    <app-book-grid [books]="books" (editClicked)="edit($event)" (recordDeleted)="remove($event)"></app-book-grid>
+  </div>
+</div>

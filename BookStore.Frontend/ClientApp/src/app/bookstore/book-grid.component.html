@@ -1,0 +1,33 @@
+<h4>Books</h4>
+
+<!-- <a href="#" (click)="newRecord(this)">New Book</a> -->
+
+<table class='table table-striped' *ngIf="books">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>ISBN</th>
+      <th>Year</th>
+      <th>Price</th>
+      <th>Created</th>
+      <th>Modified</th>
+      <th>Commands</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{ book.title }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.isbn }}</td>
+      <td>{{ book.year }}</td>
+      <td>{{ book.price  |number:'1.2-2' }}</td>
+      <td>{{ book.created |date : "short" }}</td>
+      <td>{{ book.modified |date : "short" }}</td>
+      <td>
+        <a href="#" (click)="editRecord(book)">Edit</a>&nbsp;
+        <a href="#" (click)="deleteRecord(book)">Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
